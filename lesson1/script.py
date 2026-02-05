@@ -3,7 +3,7 @@ def sum(a,b):
 
 def devide(a,b):
     if isinstance(a,str) or isinstance(b,str):
-	raise ValueError("You can not divide strings!")
+        raise ValueError("You can not divide strings!")
     if b!=0:
         return a/b
     else:
