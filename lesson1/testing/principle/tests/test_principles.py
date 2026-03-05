@@ -10,7 +10,7 @@
 # Тесты должны обнаруживать новые ошибки (pescicide paradox)
 # Тесты покрывают как успешные, так и ошибочные кейсы
 
-from math_demo import add, add_with_bug, tax_calculator_bugged
+from math_demo import add, add_with_bug, tax_calculator_bugged, tax_calculator
 
 
 def test_addition():
@@ -33,6 +33,13 @@ def test_tax_calculator_bugged():
     assert tax_calculator_bugged(234) == 46.8
     assert tax_calculator_bugged(2.34) == 0.47
     print("Test bugged tax calculator passed")
+
+def test_negative_income():
+    try:
+        tax_calculator(-100)
+        print("Test negative income failed")
+    except ValueError:
+        print("Test negative income passed")
 
 
 if __name__ == "__main__":
