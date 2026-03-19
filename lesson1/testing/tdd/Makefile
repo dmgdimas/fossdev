@@ -10,5 +10,7 @@ test-pytest:
 install-dep:
 	pip install -r requirements.txt
 
-install:
+build:
 	pip install -e .
+
+test: install-dep build test-pytest
