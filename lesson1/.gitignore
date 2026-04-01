@@ -1,5 +1,19 @@
+# Окружение
+venv/
 .venv/
+env/
+
+# Кэши Python
 __pycache__/
+*.py[cod]
+*$py.class
 .mypy_cache/
 .pytest_cache/
-*.pyc
+
+# Артефакты сборки и установки
+dist/
+build/
+*.egg-info/
+
+# Системные файлы
+.DS_Store
