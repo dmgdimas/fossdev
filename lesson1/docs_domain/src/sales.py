@@ -2,6 +2,20 @@
 
 
 def _parse_record(line: str):
+    """
+    Parsing information for one sale
+
+    Parameters:
+        line - string that contains sale record in form of comma-separated values
+
+    Return:
+        sale - sale information in form of dict
+
+    Raises:
+        ValueError
+    """
+    if line == "":
+        raise ValueError("Got zero lengtn line")
     sale = line.strip().split(",")  
     if len(sale) != 4:  # according specs each sale is defined by four fields
         return None  
