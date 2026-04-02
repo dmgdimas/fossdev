@@ -12,3 +12,4 @@ install-dep:
 
 install:
 	pip install -e .
+
