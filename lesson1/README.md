@@ -9,3 +9,10 @@
 4. Запустите все проверки одной командой: `make check`.
 
 Подробное описание архитектурных решений читайте в [отчете по проекту](./homework1/README.md).
+
+
+`ndfl_project/` — Публикация Python-пакета в TestPyPI. [Перейти к проекту](./ndfl_package/README.md).
+
+Реализована упаковка инструмента для расчета НДФЛ в полноценную библиотеку.
+**Ссылка на проект в TestPyPI:** [https://test.pypi.org/project/ndfl-calc-dmg/](https://test.pypi.org/project/ndfl-calc-dmg/)
+
