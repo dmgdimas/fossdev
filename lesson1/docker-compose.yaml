@@ -1,13 +1,13 @@
 services:
   product-service:
-    build: ./product-service
+    build: ./product_service
     ports:
       - "8001:8000"
     networks:
       - service-net
 
   order-service:
-    build: ./order-service
+    build: ./order_service
     ports:
       - "8002:8000"
     environment:
