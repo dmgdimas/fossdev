@@ -1,0 +1,19 @@
+[project]
+name = "product-service"
+version = "0.1.0"
+description = "Application for product service"
+authors = [
+    {name = "Dmitriy Gorbachev",email = "zibelmand@gmail.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.136.1,<0.137.0)",
+    "uvicorn[standart] (>=0.46.0,<0.47.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
